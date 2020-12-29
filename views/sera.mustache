@@ -26,13 +26,11 @@
             <p class="card-text">{{ name }} </p>
           </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" id="inputArea" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary col-md-5" type="button" onclick="submit()" id="button-addon2">Button</button>
-                  </div>
+        <div class="col-md-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="inputArea" placeholder="İstenen Sıcaklık" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary col-md-5" type="button" onclick="submit()" id="button-addon2">Ayarla</button>
                 </div>
             </div>
         </div>
@@ -52,6 +50,7 @@
             }),
             success: function(result) {
                 // Do something with the result
+                console.log(result)
             }
         });
 
