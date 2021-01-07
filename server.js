@@ -68,6 +68,8 @@ app.put('/put/:seraid', function (req, res) {
     const body_params = req.body;
     console.log(body_params);
     Sera.findById(req.params.seraid).then((sera) => {
+        console.log("SICAKLIK:")
+        console.log(body_params.temperature)
         if (!sera) {
             sera = new Sera();
             sera._id = req.params.seraid;
