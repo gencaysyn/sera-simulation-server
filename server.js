@@ -33,7 +33,7 @@ app.get('/all', (req, res) => {
         res.send(seras);
     })
 })
-
+app.use( express.static( "./" ) );
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
